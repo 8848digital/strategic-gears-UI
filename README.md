@@ -1,0 +1,7 @@
+## strategic
+
+strategic
+
+#### License
+
+MIT
