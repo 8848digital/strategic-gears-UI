@@ -15,7 +15,8 @@
   "column_break_axif",
   "heading",
   "sub_heading",
-  "description"
+  "description1",
+  "description2"
  ],
  "fields": [
   {
@@ -40,11 +41,6 @@
    "label": "Sub Heading"
   },
   {
-   "fieldname": "description",
-   "fieldtype": "Long Text",
-   "label": "Description"
-  },
-  {
    "fieldname": "column_break_axif",
    "fieldtype": "Column Break"
   },
@@ -57,11 +53,21 @@
    "fieldname": "button_link",
    "fieldtype": "Data",
    "label": "Button Link"
+  },
+  {
+   "fieldname": "description1",
+   "fieldtype": "Long Text",
+   "label": "Description 1"
+  },
+  {
+   "fieldname": "description2",
+   "fieldtype": "Long Text",
+   "label": "Description 2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-01 16:56:30.591002",
+ "modified": "2023-08-03 14:11:57.395204",
  "modified_by": "Administrator",
  "module": "strategic",
  "name": "Home Banner",
@@ -77,6 +83,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }
