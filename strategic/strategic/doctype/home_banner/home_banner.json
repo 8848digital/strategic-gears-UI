@@ -10,6 +10,8 @@
  "field_order": [
   "attach",
   "image_preview",
+  "button_label",
+  "button_link",
   "column_break_axif",
   "heading",
   "sub_heading",
@@ -45,11 +47,21 @@
   {
    "fieldname": "column_break_axif",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "button_label",
+   "fieldtype": "Data",
+   "label": "Button Label"
+  },
+  {
+   "fieldname": "button_link",
+   "fieldtype": "Data",
+   "label": "Button Link"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-31 11:20:59.468773",
+ "modified": "2023-08-01 16:56:30.591002",
  "modified_by": "Administrator",
  "module": "strategic",
  "name": "Home Banner",
