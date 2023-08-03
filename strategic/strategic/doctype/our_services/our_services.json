@@ -1,8 +1,8 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{name1}",
- "creation": "2023-07-27 18:06:33.626109",
+ "autoname": "format:{heading}",
+ "creation": "2023-08-03 16:14:15.602085",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -10,13 +10,12 @@
  "field_order": [
   "attach",
   "image_preview",
-  "column_break_icv7",
-  "name1",
+  "column_break_r9cu",
   "heading",
   "limit",
   "description",
-  "section_break_hyhk",
-  "service_table"
+  "section_break_isfe",
+  "our_services_table"
  ],
  "fields": [
   {
@@ -27,17 +26,7 @@
   {
    "fieldname": "image_preview",
    "fieldtype": "Image",
-   "label": "Image Preview",
-   "options": "attach"
-  },
-  {
-   "fieldname": "column_break_icv7",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name"
+   "label": "Image Preview"
   },
   {
    "fieldname": "heading",
@@ -55,22 +44,26 @@
    "label": "Description"
   },
   {
-   "fieldname": "section_break_hyhk",
+   "fieldname": "column_break_r9cu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_isfe",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "service_table",
+   "fieldname": "our_services_table",
    "fieldtype": "Table",
-   "label": "Service Table",
-   "options": "Service Table"
+   "label": "Our Services Table",
+   "options": "Our Services Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-28 12:15:03.090809",
+ "modified": "2023-08-03 16:18:49.110794",
  "modified_by": "Administrator",
  "module": "strategic",
- "name": "Our Service",
+ "name": "Our Services",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
