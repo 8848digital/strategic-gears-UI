@@ -1,14 +1,15 @@
+
 import frappe
 from frappe import _
 from frappe.utils.response import build_response
 
 @frappe.whitelist(allow_guest=True)
-def get_services():
+def get_publication():
     try:
-        our_services = frappe.get_all("Our Service", fields=["name","attach", "heading", "limit", "description"])
-        return build_response("success", data=our_services)
+        publications = frappe.get_list("Our Publication", fields=["name", "attach"])
+        return build_response("success", data=publications)
     except Exception as e:
-        frappe.log_error(title=_("API Error"), message=e)
+        frappe.log_error(title=_("API Error"), message=e, traceback=True)
         return build_response("error", message=_("An error occurred while fetching data."))
 
 def build_response(status, data=None, message=None):

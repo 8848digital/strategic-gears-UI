@@ -1,27 +1,42 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{name}",
  "creation": "2023-08-03 16:24:51.816229",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title"
+  "name1",
+  "attach",
+  "image_preview"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "Name"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach Image",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Image Preview",
+   "options": "attach"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-03 16:24:51.816229",
+ "modified": "2023-08-03 18:12:58.035153",
  "modified_by": "Administrator",
  "module": "strategic",
  "name": "Our Publication",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
