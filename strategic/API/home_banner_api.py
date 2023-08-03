@@ -6,7 +6,7 @@ from frappe.utils.response import build_response
 @frappe.whitelist(allow_guest=True)
 def get_banner():
     try:
-        home_banner = frappe.get_list("Home Banner", fields=["name", "attach", "heading", "sub_heading", "description"])
+        home_banner = frappe.get_list("Home Banner", fields=["name", "attach", "heading", "sub_heading", "description1","description2"])
         return build_response("success", data=home_banner)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e, traceback=True)

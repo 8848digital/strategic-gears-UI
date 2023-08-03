@@ -24,7 +24,9 @@
   "column_break_e2fu",
   "left",
   "right",
-  "is_group"
+  "is_group",
+  "old_parent",
+  "parent_category"
  ],
  "fields": [
   {
@@ -114,11 +116,23 @@
    "fieldname": "is_group",
    "fieldtype": "Data",
    "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Category"
+  },
+  {
+   "fieldname": "parent_category",
+   "fieldtype": "Link",
+   "label": "Parent Category",
+   "options": "Category"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-03 13:54:09.917723",
+ "modified": "2023-08-03 14:20:36.739094",
  "modified_by": "Administrator",
  "module": "strategic",
  "name": "Category",
