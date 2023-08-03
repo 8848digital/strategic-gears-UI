@@ -5,7 +5,7 @@ from frappe.utils.response import build_response
 @frappe.whitelist(allow_guest=True)
 def get_services():
     try:
-        our_services = frappe.get_list("Our Services", fields=["name","attach", "heading", "limit", "description", "service_table"])
+        our_services = frappe.get_all("Our Services", fields=["name","attach", "heading", "limit", "description"])
         return build_response("success", data=our_services)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e)
