@@ -7,18 +7,47 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title"
+  "title",
+  "attach",
+  "image_preview",
+  "column_break_qdjz",
+  "sequence",
+  "publics"
  ],
  "fields": [
   {
    "fieldname": "title",
    "fieldtype": "Data",
    "label": "Title"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach Image",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Image Preview"
+  },
+  {
+   "fieldname": "column_break_qdjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sequence",
+   "fieldtype": "Data",
+   "label": "Sequence"
+  },
+  {
+   "fieldname": "publics",
+   "fieldtype": "Data",
+   "label": "Publics"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-03 15:25:02.819908",
+ "modified": "2023-08-03 16:22:37.054882",
  "modified_by": "Administrator",
  "module": "strategic",
  "name": "Call To Active",
