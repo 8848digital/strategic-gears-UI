@@ -1,27 +1,39 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-08-03 16:24:51.816229",
+ "creation": "2023-08-03 17:12:39.961584",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title"
+  "email_address",
+  "first_name",
+  "last_name"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "email_address",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-03 16:24:51.816229",
+ "modified": "2023-08-03 17:17:03.805616",
  "modified_by": "Administrator",
  "module": "strategic",
- "name": "Publications",
+ "name": "Subscribe",
  "owner": "Administrator",
  "permissions": [
   {

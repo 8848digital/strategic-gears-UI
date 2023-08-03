@@ -7,18 +7,60 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title"
+  "attach",
+  "image_preview",
+  "column_break_0fdf",
+  "heading",
+  "sub_heading",
+  "description_1",
+  "description_2",
+  "description_3"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "attach",
+   "fieldtype": "Attach Image",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Image Preview",
+   "options": "attach"
+  },
+  {
+   "fieldname": "column_break_0fdf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heading",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "Heading"
+  },
+  {
+   "fieldname": "sub_heading",
+   "fieldtype": "Data",
+   "label": "Sub Heading"
+  },
+  {
+   "fieldname": "description_1",
+   "fieldtype": "Long Text",
+   "label": "Description 1"
+  },
+  {
+   "fieldname": "description_2",
+   "fieldtype": "Long Text",
+   "label": "Description 2"
+  },
+  {
+   "fieldname": "description_3",
+   "fieldtype": "Long Text",
+   "label": "Description 3"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-03 16:47:18.924029",
+ "modified": "2023-08-03 17:06:06.200360",
  "modified_by": "Administrator",
  "module": "strategic",
  "name": "Reports",
