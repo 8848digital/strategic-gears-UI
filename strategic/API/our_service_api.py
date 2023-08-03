@@ -6,7 +6,7 @@ from frappe.utils.response import build_response
 def get_services():
     try:
         # Fetch data from the parent table "Our Service"
-        our_services = frappe.get_list("Our Service", fields=["name","attach", "heading", "limit", "description", "service_table"])
+        our_services = frappe.get_list("Our Services", fields=["name","attach", "heading", "limit", "description", "service_table"])
 
         # Fetch data from the child table "Service Table" and add it to the result
         for service in our_services:
