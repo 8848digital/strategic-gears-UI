@@ -7,7 +7,7 @@ from frappe.utils.response import build_response
 @frappe.whitelist(allow_guest=True)
 def get_service():
     try:
-        home_banner = frappe.get_list("Home Banner", fields=["name", "attach"])
+        home_banner = frappe.get_list("Our Service", fields=["name", "attach"])
         return build_response("success", data=home_banner)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e, traceback=True)

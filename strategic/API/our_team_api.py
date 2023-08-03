@@ -4,10 +4,10 @@ from frappe import _
 from frappe.utils.response import build_response
 
 @frappe.whitelist(allow_guest=True)
-def get_team():
+def get_teams():
     try:
-        team = frappe.get_list("Our Team", fields=["name", "attach", "designation","tittle","description"])
-        return build_response("success", data=team)
+        teams = frappe.get_list("Our Team", fields=["name", "attach", "designation","tittle","description"])
+        return build_response("success", data=teams)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e, traceback=True)
         return build_response("error", message=_("An error occurred while fetching data."))
