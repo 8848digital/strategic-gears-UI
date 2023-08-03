@@ -4,7 +4,7 @@ from frappe import _
 from frappe.utils.response import build_response
 
 @frappe.whitelist(allow_guest=True)
-def get_service():
+def get_services():
     try:
         our_services = frappe.get_list("Our Service", fields=["name","attach", "heading", "limit", "description", "service_table"])
         return build_response("success", data=our_services)
