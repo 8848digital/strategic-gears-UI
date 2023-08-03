@@ -1,7 +1,7 @@
 // Copyright (c) 2023, shyam and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Call To Active", {
+// frappe.ui.form.on("Call To Action", {
 // 	refresh(frm) {
 
 // 	},

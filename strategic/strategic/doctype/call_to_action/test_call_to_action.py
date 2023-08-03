@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestCallToActive(FrappeTestCase):
+class TestCallToAction(FrappeTestCase):
 	pass

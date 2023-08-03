@@ -7,19 +7,13 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title",
   "attach",
   "image_preview",
   "column_break_qdjz",
   "sequence",
-  "publics"
+  "publish"
  ],
  "fields": [
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title"
-  },
   {
    "fieldname": "attach",
    "fieldtype": "Attach Image",
@@ -40,17 +34,18 @@
    "label": "Sequence"
   },
   {
-   "fieldname": "publics",
-   "fieldtype": "Data",
-   "label": "Publics"
+   "default": "0",
+   "fieldname": "publish",
+   "fieldtype": "Check",
+   "label": "Publish"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-03 16:22:37.054882",
+ "modified": "2023-08-03 19:37:23.553176",
  "modified_by": "Administrator",
  "module": "strategic",
- "name": "Call To Active",
+ "name": "Call To Action",
  "owner": "Administrator",
  "permissions": [
   {

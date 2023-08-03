@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class CallToActive(Document):
+class CallToAction(Document):
 	pass
