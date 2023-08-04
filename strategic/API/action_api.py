@@ -4,9 +4,9 @@ from frappe import _
 from frappe.utils.response import build_response
 
 @frappe.whitelist(allow_guest=True)
-def get_action():
+def get_actions():
     try:
-        action = frappe.get_list("Call To Action", fields=["name", "attach", "heading", "sub_heading", "description1","description2"])
+        action = frappe.get_list("Call To Action", fields=["name", "attach" ])
         return build_response("success", data=action)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e, traceback=True)

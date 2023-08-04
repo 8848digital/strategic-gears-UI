@@ -22,7 +22,8 @@
   {
    "fieldname": "image_preview",
    "fieldtype": "Image",
-   "label": "Image Preview"
+   "label": "Image Preview",
+   "options": "attach"
   },
   {
    "fieldname": "column_break_qdjz",
@@ -42,7 +43,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-03 19:37:23.553176",
+ "modified": "2023-08-04 11:21:38.587244",
  "modified_by": "Administrator",
  "module": "strategic",
  "name": "Call To Action",
