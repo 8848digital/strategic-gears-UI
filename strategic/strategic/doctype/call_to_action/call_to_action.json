@@ -11,7 +11,9 @@
   "image_preview",
   "column_break_qdjz",
   "sequence",
-  "publish"
+  "publish",
+  "section_break_v2d4",
+  "action_table"
  ],
  "fields": [
   {
@@ -39,11 +41,21 @@
    "fieldname": "publish",
    "fieldtype": "Check",
    "label": "Publish"
+  },
+  {
+   "fieldname": "section_break_v2d4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "action_table",
+   "fieldtype": "Table",
+   "label": "Action Table",
+   "options": "Action Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-04 11:21:38.587244",
+ "modified": "2023-08-04 11:48:30.523432",
  "modified_by": "Administrator",
  "module": "strategic",
  "name": "Call To Action",
