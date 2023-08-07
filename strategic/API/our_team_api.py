@@ -6,7 +6,7 @@ from frappe.utils.response import build_response
 @frappe.whitelist(allow_guest=True)
 def get_teams():
     try:
-        teams = frappe.get_list("Our Team", fields=["name", "attach", "designation","tittle","description,description2,description3"])
+        teams = frappe.get_list("Our Team", fields=["name", "attach", "designation","tittle","description"])
         return build_response("success", data=teams)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e, traceback=True)
