@@ -6,9 +6,9 @@ from frappe.utils.response import build_response
 @frappe.whitelist(allow_guest=True)
 def get_navbar():
     try:
-        navbar = frappe.get_list("Navbar", fields=["name1","navbar_table"])
-        for service in navbar:
-            service["Navbar Table"] = frappe.get_all("Navbar Table", filters={"parent": service.name1}, fields=["name1","url"])
+        navbar = frappe.get_list("Navbar", fields=["name1"])
+        for navtab in navbar:
+            navtab["Navbar Table"] = frappe.get_all("Navbar Table", filters={"parent": navtab.name1}, fields=["name1"])
         return build_response("success", data=navbar)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e, traceback=True)
