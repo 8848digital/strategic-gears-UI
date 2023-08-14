@@ -31,7 +31,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-08 11:18:45.123585",
+ "modified": "2023-08-14 14:55:28.304089",
  "modified_by": "Administrator",
  "module": "strategic",
  "name": "Our Clients",
@@ -46,6 +46,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }
