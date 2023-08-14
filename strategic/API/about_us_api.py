@@ -3,9 +3,9 @@ import frappe
 @frappe.whitelist(allow_guest=True)
 def get_aboutus():
     try:
-        about_us = frappe.get_list("About US", fields=["name", "attach", "heading", "description"])
+        about_us = frappe.get_list("About US", fields=[ "attach", "heading", "description"])
         for about in about_us:
-            child_table_data = frappe.get_all("About us Table", filters={"parent": about.name}, fields=["name1", "description"])
+            child_table_data = frappe.get_all("About us Table", filters={"parent": about.name1}, fields=["name1", "description"])
             about["values"] = [{"name1": item["name1"], "description_parts": item["description"].split('\n')} for item in child_table_data]
 
         return build_response("success", data=about_us)
