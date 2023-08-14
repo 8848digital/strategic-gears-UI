@@ -1,35 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{heading}",
- "creation": "2023-08-10 11:19:26.950952",
+ "creation": "2023-08-08 11:17:22.131379",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "heading",
-  "sub_heading",
-  "description1",
-  "description2",
-  "column_break_deeu",
+  "title",
   "attach",
-  "image_preview"
+  "image_preview",
+  "column_break_nxxk",
+  "name1",
+  "designation",
+  "tittle",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "heading",
+   "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Heading"
-  },
-  {
-   "fieldname": "sub_heading",
-   "fieldtype": "Small Text",
-   "label": "Sub Heading"
-  },
-  {
-   "fieldname": "column_break_deeu",
-   "fieldtype": "Column Break"
+   "label": "Title"
   },
   {
    "fieldname": "attach",
@@ -43,23 +34,36 @@
    "options": "attach"
   },
   {
-   "fieldname": "description1",
-   "fieldtype": "Long Text",
-   "label": "Description1"
+   "fieldname": "column_break_nxxk",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "description2",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "tittle",
+   "fieldtype": "Small Text",
+   "label": "Tittle"
+  },
+  {
+   "fieldname": "description",
    "fieldtype": "Long Text",
-   "label": "Description2"
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-10 11:41:00.379941",
+ "modified": "2023-08-08 11:22:04.193657",
  "modified_by": "Administrator",
  "module": "strategic",
- "name": "Reports",
- "naming_rule": "Expression",
+ "name": "Our Team",
  "owner": "Administrator",
  "permissions": [
   {

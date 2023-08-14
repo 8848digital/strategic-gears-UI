@@ -8,7 +8,7 @@ def get_navbar():
     try:
         navbar = frappe.get_list("Navbar", fields=["name1"])
         for navtab in navbar:
-            navtab["Value"] = frappe.get_all("Navbar Table", filters={"parent": navtab.name1}, fields=["name1","url"])
+            navtab["values"] = frappe.get_all("Navbar Table", filters={"parent": navtab.name1}, fields=["name1","url"])
         return build_response("success", data=navbar)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e, traceback=True)

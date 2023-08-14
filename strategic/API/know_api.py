@@ -4,13 +4,10 @@ from frappe import _
 from frappe.utils.response import build_response
 
 @frappe.whitelist(allow_guest=True)
-def get_actions():
+def get_know():
     try:
-        action = frappe.get_list("Call To Action", fields=["name", "attach","custom_heading","custom_description" ])
-
-        for action in action:
-            action["values"] = frappe.get_all("Action Table", filters={"parent": action.name}, fields=["sector"])
-        return build_response("success", data=action)
+        our_know = frappe.get_list("WHAT WE WANT TO KNOW", fields=["name1","description"])
+        return build_response("success", data=our_know)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e, traceback=True)
         return build_response("error", message=_("An error occurred while fetching data."))

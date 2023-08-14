@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{full_name}",
+ "creation": "2023-08-10 18:13:58.870056",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "resumecv",
+  "full_name",
+  "email",
+  "phone",
+  "current_company",
+  "linkedin_url",
+  "what_is_your_nationality",
+  "please_attach_your_iqama_application",
+  "what_is_your_major_in_the_university",
+  "arabic_proficiency",
+  "english_proficiency",
+  "do_you_have_any_relatives_in_strategic_gears",
+  "additional_information"
+ ],
+ "fields": [
+  {
+   "fieldname": "resumecv",
+   "fieldtype": "Attach",
+   "label": "Resume/CV"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "current_company",
+   "fieldtype": "Data",
+   "label": "Current company"
+  },
+  {
+   "fieldname": "linkedin_url",
+   "fieldtype": "Data",
+   "label": "LinkedIn URL"
+  },
+  {
+   "fieldname": "what_is_your_nationality",
+   "fieldtype": "Select",
+   "label": "What is your Nationality?",
+   "options": "\nSaudi\nNon-Saudi\nSon\\Daughter of Saudi Mother Or Husband of Saudi Wife"
+  },
+  {
+   "fieldname": "please_attach_your_iqama_application",
+   "fieldtype": "Long Text",
+   "label": "Please attach your Iqama application"
+  },
+  {
+   "fieldname": "what_is_your_major_in_the_university",
+   "fieldtype": "Long Text",
+   "label": "What is your major in the university?"
+  },
+  {
+   "fieldname": "arabic_proficiency",
+   "fieldtype": "Select",
+   "label": "Arabic proficiency",
+   "options": "\nFluent / bilingual\nConversational / intermediate\nBasic / beginner"
+  },
+  {
+   "fieldname": "english_proficiency",
+   "fieldtype": "Select",
+   "label": "English proficiency",
+   "options": "\nFluent / bilingual\nConversational / intermediate\nBasic / beginner"
+  },
+  {
+   "fieldname": "do_you_have_any_relatives_in_strategic_gears",
+   "fieldtype": "Long Text",
+   "label": "Do you have any relatives in Strategic Gears?"
+  },
+  {
+   "fieldname": "additional_information",
+   "fieldtype": "Long Text",
+   "label": "ADDITIONAL INFORMATION"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-11 14:52:31.225789",
+ "modified_by": "Administrator",
+ "module": "strategic",
+ "name": "Applicant",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

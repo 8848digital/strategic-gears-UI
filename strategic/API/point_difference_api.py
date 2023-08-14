@@ -1,18 +1,18 @@
-# your_app_name/api.py
 import frappe
 from frappe import _
 from frappe.utils.response import build_response
 
 @frappe.whitelist(allow_guest=True)
-def get_actions():
+def get_point():
     try:
-        action = frappe.get_list("Call To Action", fields=["name", "attach","custom_heading","custom_description" ])
+        our_point = frappe.get_all("Points Of Difference", fields=["name", "heading1", "sub_heading1", "heading2", "sub_heading2", "heading3", "sub_heading3", "heading4", "sub_heading4"])
 
-        for action in action:
-            action["values"] = frappe.get_all("Action Table", filters={"parent": action.name}, fields=["sector"])
-        return build_response("success", data=action)
+        for point in our_point:
+            point["values"] = frappe.get_all("Point Table", filters={"parent": point.name}, fields=["attach"])
+
+        return build_response("success", data=our_point)
     except Exception as e:
-        frappe.log_error(title=_("API Error"), message=e, traceback=True)
+        frappe.log_error(title=_("API Error"), message=str(e))
         return build_response("error", message=_("An error occurred while fetching data."))
 
 def build_response(status, data=None, message=None):

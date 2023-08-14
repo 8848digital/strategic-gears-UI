@@ -1,16 +1,14 @@
-# your_app_name/api.py
 import frappe
-from frappe import _
-from frappe.utils.response import build_response
 
 @frappe.whitelist(allow_guest=True)
-def get_actions():
+def get_aboutus():
     try:
-        action = frappe.get_list("Call To Action", fields=["name", "attach","custom_heading","custom_description" ])
+        about_us = frappe.get_list("About US", fields=["name", "attach", "heading", "description"])
+        for about in about_us:
+            child_table_data = frappe.get_all("About us Table", filters={"parent": about.name}, fields=["name1", "description"])
+            about["values"] = [{"name1": item["name1"], "description_parts": item["description"].split('\n')} for item in child_table_data]
 
-        for action in action:
-            action["values"] = frappe.get_all("Action Table", filters={"parent": action.name}, fields=["sector"])
-        return build_response("success", data=action)
+        return build_response("success", data=about_us)
     except Exception as e:
         frappe.log_error(title=_("API Error"), message=e, traceback=True)
         return build_response("error", message=_("An error occurred while fetching data."))

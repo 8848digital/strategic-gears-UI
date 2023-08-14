@@ -1,35 +1,21 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{heading}",
- "creation": "2023-08-10 11:19:26.950952",
+ "creation": "2023-08-07 18:27:18.939444",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "heading",
-  "sub_heading",
-  "description1",
-  "description2",
-  "column_break_deeu",
+  "name1",
   "attach",
   "image_preview"
  ],
  "fields": [
   {
-   "fieldname": "heading",
+   "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Heading"
-  },
-  {
-   "fieldname": "sub_heading",
-   "fieldtype": "Small Text",
-   "label": "Sub Heading"
-  },
-  {
-   "fieldname": "column_break_deeu",
-   "fieldtype": "Column Break"
+   "label": "Name"
   },
   {
    "fieldname": "attach",
@@ -41,25 +27,14 @@
    "fieldtype": "Image",
    "label": "Image Preview",
    "options": "attach"
-  },
-  {
-   "fieldname": "description1",
-   "fieldtype": "Long Text",
-   "label": "Description1"
-  },
-  {
-   "fieldname": "description2",
-   "fieldtype": "Long Text",
-   "label": "Description2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-10 11:41:00.379941",
+ "modified": "2023-08-07 18:28:05.887278",
  "modified_by": "Administrator",
  "module": "strategic",
- "name": "Reports",
- "naming_rule": "Expression",
+ "name": "Clients",
  "owner": "Administrator",
  "permissions": [
   {

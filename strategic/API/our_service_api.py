@@ -8,7 +8,7 @@ def get_services():
         our_services = frappe.get_all("Our Service", fields=["name","attach", "heading", "limit", "description"])
 
         for service in our_services:
-            service["service_table_data"] = frappe.get_all("Service Table", filters={"parent": service.name}, fields=["name1", "description"])
+            service["values"] = frappe.get_all("Service Table", filters={"parent": service.name}, fields=["name1", "description"])
 
         return build_response("success", data=our_services)
     except Exception as e:
